@@ -1,6 +1,6 @@
 :root {
   --background: #242635;
-  --container: #dd522e;
+  --container: #6495ed;
   --text: #f8f9fb;
 }
 body {
@@ -18,12 +18,8 @@ body {
   height: 70vh;
   background: var(--container);
 }
-.btn-add,
-.btn-sub,
-.btn-div,
-.btn-mul {
-  cursor: pointer;
-  font-size: 14px;
+.btn {
+  font-size: 16px;
   font-weight: 900w;
   border: none;
   outline: none;
@@ -43,9 +39,22 @@ body {
   outline: none;
   border: 2px solid var(--background);
 }
+.btn:hover {
+  cursor: pointer;
+  opacity: 95%;
+}
 .wrapper {
   margin: 20px auto;
 }
 .button-wrapper {
+  margin: 20px auto;
+}
+* {
+  border-radius: 6px;
+}
+.result {
+  font-size: 20px;
+  font-weight: 900w;
+  color: var(--text);
   margin: 20px auto;
 }
